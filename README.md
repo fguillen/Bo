@@ -83,6 +83,8 @@ You can upload _MarkDown_ documents or directly _HTML_ or a mess of both.
 The document content won't be scaped.
 
 
+
+
 Install
 -----------
 
@@ -91,8 +93,30 @@ Config
 -----------
 
 
-Templates
+Template System
 -----------
-There is not any template system, I was thinking on some kind of template system but whatever I thought wasn't simpler than directly go to the view folder and edit by your self.
 
-Also you can do a lot staff just changing the **bo.css** and the **user.css** files.
+On the _/templates_ dir you can create a new dir with your template.
+
+Just be sure the follow files exists:
+
+* index.haml
+* show.haml
+
+And if you want layout:
+
+* layout.haml
+
+Then active your template in here:
+
+    # bo.rb
+    configure do
+      set :views, "#{File.dirname(__FILE__)}/templates/<your template dir>"
+    end
+
+### Assets
+
+The hole _assets_ dir on your _template_ dir will be upload to the _/public_ dir so you will can access to your assets on your templates like this:
+
+    # layout.haml
+    %link{ :rel => 'stylesheet', :href => '/assets/style.css', :type => 'text/css' }
