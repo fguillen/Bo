@@ -1,0 +1,4 @@
+%ul
+- @docs.each do |doc|
+  %li
+    %a{ :title => doc.title, :href => doc.file_name }= doc.title
