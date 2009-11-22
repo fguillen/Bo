@@ -45,4 +45,15 @@ class BoFunctionalTest < Test::Unit::TestCase
     assert_match( 'Wadus', last_response.body )
     assert_match( 'xxx', last_response.body )
   end
+  
+  def test_on_startup_should_copy_assets_to_public
+    # TODO: HOW IN THE HELL CAN I TEST THIS?
+    # TODO: better one only optimized css?
+    File.delete( "#{File.dirname(__FILE__)}/../public/bo.css" )
+    assert( !File.exists?( "#{File.dirname(__FILE__)}/../public/bo.css" ) )
+        
+    # app.configure # doesn't exists
+    
+    assert( File.exists?( "#{File.dirname(__FILE__)}/../public/bo.css" ) )
+  end
 end

@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('bo_client', '0.1.0') do |p|
+Echoe.new('bo_client') do |p|
   p.description    = "Console client for Bo"
   p.url            = "http://bo.fernandoguillen.info"
   p.author         = "Fernando Guillen"

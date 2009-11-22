@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require "#{File.dirname(__FILE__)}/doc"
+require "#{File.dirname(__FILE__)}/utils"
 
 set :show_exceptions, false
 set :logging, true
@@ -13,6 +14,9 @@ set :clean_trace, true
 configure do
   set :pass => 'wadus'
   set :docs_path => "#{File.dirname(__FILE__)}/docs"
+  set :views, "#{File.dirname(__FILE__)}/templates/test"
+  
+  Bo::Utils.prepare_assets
 end
 
 post '/' do
@@ -30,3 +34,5 @@ get '/:file_name' do
   
   haml :show
 end
+
+

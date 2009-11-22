@@ -12,7 +12,9 @@ Just a proposal, **still not working**.
 Why
 -----------
 
-I was to lazy to upload my blog, the biggest issue was that the interface was too much, I was used to use WordPress what is an amazing tool, too amazing for me, too many possibilities, too many functions.. too many to me, and in the other hand was very difficult to include code and embeded video elements, even I was lazy to use the wysiwyg editor... 
+My blog is a mess.. all these tags, and categories, and pages, and.. buff.. to much noise, I think I want something very much simple.
+
+I was to lazy to upload my blog, the biggest issue was that the interface was too much, I was used to use WordPress what is an amazing tool, too many possibilities, too many functions.. too many to me, and in the other hand was very difficult to include code and embedded video elements, even I was lazy to use the wysiwyg editor... 
 
 Besides the among of times my super-multi-line-not-saved posts was lost because some navigator incident.
 
