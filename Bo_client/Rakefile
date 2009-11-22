@@ -1,0 +1,17 @@
+require 'rubygems'
+require 'rake'
+require 'echoe'
+
+Echoe.new('bo_client', '0.1.0') do |p|
+  p.description    = "Console client for Bo"
+  p.url            = "http://bo.fernandoguillen.info"
+  p.author         = "Fernando Guillen"
+  p.email          = "fguillen.mail@gmail.com"
+  p.ignore_pattern = ["tmp/*", "script/*"]
+  p.development_dependencies = []
+  p.install_message = "Bo installed!"
+  # p.executables    = ['bo']
+end
+
+Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
+

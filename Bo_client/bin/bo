@@ -1,0 +1,10 @@
+#!ruby
+
+require 'bo'
+
+if (ARGV.size != 3)
+  STDERR.puts("use '#{$0} <url> <pass> <path to file>'")
+  exit 1
+end
+
+Bo.upload( ARGV[0], ARGV[1], ARGV[2] )
