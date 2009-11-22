@@ -92,6 +92,10 @@ Install
 Config
 -----------
 
+TextMate Bundle
+------------
+Upload a file directly from TextMate
+
 
 Template System
 -----------
