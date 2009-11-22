@@ -3,6 +3,12 @@ Bo
 
 Is a most simple document manager system ever.
 
+
+Version
+-----------
+Just a proposal, **still not working**.
+
+
 Why
 -----------
 
@@ -50,6 +56,10 @@ HowToUse
     $ bo upload "http://myboblog.com" pass my_opinion_about_me.md
 
 
+
+TextMate Bundle
+-----------
+    cmd + b + o
 
 
 Details
